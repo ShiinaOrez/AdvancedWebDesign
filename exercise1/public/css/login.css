@@ -1,0 +1,146 @@
+body {
+    width:100%;
+    height:100%;
+    position: relative;
+    background-image: url("../images/login/loginBac.png");;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.body:after{
+    content: "";
+    width:100%;
+    height:100%;
+    position: absolute;
+    left:0;
+    top:0;
+    background: inherit;
+    filter: blur(2px);
+    z-index: 2;
+}
+.drag{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:200px;
+    height:200px;
+    text-align: center;
+
+    z-index:11;
+}
+ 
+#login_frame {
+    width: 400px;
+    height: 300px;
+    padding: 13px;
+ 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+ 
+    background-color: rgba(240, 255, 255, 0.5);
+ 
+    border-radius: 10px;
+    text-align: center;
+}
+ 
+form p > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+ 
+#image_logo {
+    margin-top: 22px;
+}
+ 
+.label_input {
+    font-size: 14px;
+    font-family: 宋体;
+ 
+    width: 65px;
+    height: 40px;
+    line-height: 28px;
+    text-align: center;
+ 
+    color: white;
+    background-color: #3CD8FF;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+ 
+.text_field {
+    width: 400px;
+    height: 40px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 0;
+}
+ 
+#button_login {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+    width: 160px;
+    height: 40px;
+    line-height: 28px;
+    text-align: center;
+ 
+    color: white;
+    background-color: #3BD9FF;
+    border-radius: 6px;
+    border: 0;
+ 
+    float: left;
+}
+ 
+#forget_pwd {
+    font-size: 12px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    float: right;
+    top: 5px;
+ 
+}
+ 
+#forget_pwd:hover {
+    color: blue;
+    text-decoration: underline;
+}
+ 
+#login_control {
+    padding: 0 28px;
+}
+
+.alingcenter {
+clear:both;
+display:block;
+margin:auto;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.father {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.son {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
