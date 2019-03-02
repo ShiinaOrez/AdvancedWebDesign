@@ -1,0 +1,87 @@
+body {
+    width:100%;
+    height:100%;
+    position: relative;
+    background-image: url("../images/login/loginBac.png");;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#first {
+    position: fixed;
+    bottom: 680px;
+    right: 1000px;
+    height: 300px;
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 10px 10px 100px 100px rgba(255,255,255,.7) inset;
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,1));
+}
+
+#second {
+    position: fixed;
+    bottom: 335px;
+    right: 800px;
+    height: 400px;
+    width: 1200px;
+    background-color: rgba(90, 125, 241, 0.1);
+    box-shadow: 0 0 100px 100px rgba(255,255,255,.7) inset;
+    background-image: linear-gradient(rgba(64, 114, 252, 0),rgb(50, 248, 248));
+}
+
+.avatar{
+    position: fixed;
+    bottom: 740px;
+    right: 1680px;
+}
+
+.logo{
+    height: 180px;
+    width: 180px;
+    box-shadow: 5px 5px 3px;
+}
+
+@font-face{
+    font-family: 'Girls';
+    src: url("../font/hkgitls.ttf");
+}
+
+.name{
+    position: fixed;
+    bottom: 770px;
+    right: 1200px;
+    font-family: 'Girls';
+    font-size: 72px;
+    color: darkorchid;
+    box-shadow: 5px 5px 3px;
+}
+
+.institute{
+    position: fixed;
+    bottom: 680px;
+    right: 1100px;
+    font-family: 'Girls';
+    font-size: 72px;
+    color: cadetblue;
+    box-shadow: 5px 5px 3px;
+}
+
+.where{
+    position: fixed;
+    bottom: 500px;
+    right: 1200px;
+    font-family: 'Girls';
+    font-size: 64px;
+    color: beige;
+    box-shadow: 5px 5px 3px;
+}
+
+.dongying{
+    position: fixed;
+    bottom: 355px;
+    right: 900px;
+    font-family: 'Girls';
+    font-size: 86px;
+    color: rgb(255, 211, 14);
+    box-shadow: -5px -5px 3px;
+}
