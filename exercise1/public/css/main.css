@@ -1,0 +1,328 @@
+head {
+  display: none;
+}
+
+body {
+  display: block;
+  margin: 8px;
+}
+
+body, p {
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', 'Source Han Sans SC', 'Noto Sans CJK SC', 'WenQuanYi Micro Hei', sans-serif;
+  font-size: 15px;
+  color: #1A1A1A;
+  background: #F6F6F6;
+  -webkit-tap-highlight-color: rgba(26, 26, 26, 0);
+}
+
+div {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+
+input {
+  -webkit-appearance: textfield;
+  background-color: white;
+  -webkit-rtl-ordering: logical;
+  cursor: text;
+  padding: 1px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+}
+
+input, textarea, select, button {
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+}
+
+input, textarea, select, button, meter, progress {
+  -webkit-writing-mode: horizontal-tb !important;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+  align-items: flex-start;
+  text-align: center;
+  cursor: default;
+  color: buttontext;
+  background-color: buttonface;
+  box-sizing: border-box;
+  padding: 2px 6px 3px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: buttonface;
+  border-image: initial;
+}
+
+input, textarea, select, button {
+  text-rendering: auto;
+  color: initial;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  margin: 0em;
+  font: 400 13.3333px Arial;
+}
+
+input, textarea, select, button, meter, progress {
+  -webkit-writing-mode: horizontal-tb !important;
+}
+
+article, aside, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+smsInput {
+  width: auto;
+}
+
+.EntrySign-body {
+  overflow: hidden;
+}
+
+.SignFlow {
+  overflow: hidden;
+}
+
+.SignFlowHomepage {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(../images/login/loginBac.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.SignFlowHomepage-content {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  min-height: 688px;
+  height: calc(100% - 42px);
+  box-sizing: border-box;
+}
+
+.SignFlowHomepage .Card {
+  overflow: visible;
+}
+
+.SignContainer-content {
+  width: 432px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.Card {
+  margin-bottom: 10px;
+  background: #FFFFFF;
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+  box-sizing: border-box;
+}
+
+.SignFlowHeader {
+  padding-top: 30px;
+}
+
+.SignFlowHeader-slogen {
+  margin-top: 15px;
+  color: #0084FF;
+  font-size: 22px;
+}
+
+.SignContainer-inner {
+  position: relative;
+}
+
+.Register-content {
+  padding: 0 40px 36px;
+  font-size: 14px;
+}
+
+.SignFlow-account {
+  margin-top: 16px;
+  border-bottom: 1px solid #EBEBEB;
+  border-radius: 0;
+}
+
+.SignFlow-accountInputContainer {
+  overflow: hidden;
+}
+
+.SignFlowInput {
+  position: relative;
+}
+
+.SignContainer-content .SignFlow-accountInput.Input-wrapper, .SignContainer-content .SignFlow-accountInput.Input-wrapper.is-focus {
+  border: none;
+}
+
+.SignContainer-content .Input-wrapper {
+  width: 100%;
+  height: 48px;
+  padding: 0;
+  color: #8590A6;
+  border: none;
+  border-bottom: 1px solid #EBEBEB;
+  border-radius: 0;
+}
+
+.SignFlowInput .Input-wrapper {
+  width: 100%;
+  height: 48px;
+  padding: 0;
+  color: #8590A6;
+}
+
+.Input-wrapper {
+  position: relative;
+  display: flex;
+  width: 180px;
+  height: 34px;
+  padding: 4px 10px;
+  font-size: 14px;
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  border-radius: 3px;
+  box-sizing: border-box;
+  transition: background 200ms, border 200ms;
+}
+
+.SignFlowInput input.Input {
+  height: 48px;
+}
+
+input.Input {
+  color: #1A1A1A;
+  height: 24px;
+  line-height: 24px;
+}
+
+.Input {
+  flex: 1 1;
+  padding: 0;
+  overflow: hidden;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.SignFlow-smsInputContainer {
+  position: relative;
+  margin-top: 12px;
+}
+
+.Button--primary.Button--blue {
+  color: #FFFFFF;
+  background-color: #0084FF;
+}
+
+.Register-submitButton, .Register-getIn {
+  width: 100%;
+  margin-top: 30px;
+  height: 36px;
+}
+
+.Button--blue {
+  color: #0084FF;
+  border-color: #0084FF;
+}
+
+.Button {
+  display: inline-block;
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 32px;
+  color: #8590A6;
+  text-align: center;
+  cursor: pointer;
+  background: none;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+.Register-footer {
+  font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  line-height: 25px;
+}
+
+.Register-declaration {
+  color: #8590A6;
+}
+
+.SignContainer-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #F6F6F6;
+  height: 58px;
+  border-top: 1px solid #EBEBEB;
+  font-size: 16px;
+}
+
+.SignFlowHomepage-footer {
+  font-size: 12px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 0 1px 2px #999999;
+}
