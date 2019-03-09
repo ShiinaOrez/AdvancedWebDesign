@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect, withRouter} from 'react-router-dom';
 import RegisterContent from './RegisterContent'
 import PropTypes from "prop-types"
 import Footer from './Footer'
@@ -32,9 +32,8 @@ class Login extends Component {
             inputUserName,
             inputPassword
         } = this.state;
-        const { history } = this.props
         if (inputUserName && inputPassword) {
-            history.push('/homepage')
+            this.props.history.push('/homepage')
         } else {
             alert("Please input the username and password");
         }
@@ -84,14 +83,4 @@ class Login extends Component {
   }
 }
 
-Login.propTypes = {
-    history: PropTypes.shape({
-        push:PropTypes.func
-    })
-}
-
-Login.defaultTypes = {
-    history:{}
-}
-
-export default Login;
+export default withRouter(Login);

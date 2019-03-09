@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import '../css/App.css'
 
@@ -45,10 +46,8 @@ class RegisterContent extends Component {
             inputPassword,
             inputPassword2
         } = this.state;
-        const { history } = this.props
         if (inputUsername && inputEmail && inputPassword && inputPassword2) {
-            debugger
-            history.push('/homepage')
+            this.props.history.push('/homepage')
         } else {
             alert("Please input Username, Password and Email");
         }
@@ -100,14 +99,4 @@ class RegisterContent extends Component {
     }
 }
 
-RegisterContent.propTypes = {
-    history: PropTypes.shape({
-        push: PropTypes.func
-    })
-}
-
-RegisterContent.defaultTypes = {
-    history: {}
-}
-
-export default RegisterContent;
+export default withRouter(RegisterContent);
