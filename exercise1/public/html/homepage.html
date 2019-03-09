@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Shiina's Homepage Login</title>
-    <link rel="stylesheet" type="text/css" href="public/css/dispatch.css"/>
-    <script type="text/javascript" src="public/js/dispatch.js"></script>
+    <title>ShiinaOrez's Site</title>
+    <meta name="description" content="Shiina Orez's Site Is the Homework for Advanced Web Program Design">
+    <link href="../css/main.css" rel="stylesheet">
 </head>
-<body>
-<div class="father">
-<div class="son">
-        <div class="btdiv">
-            <input type="button" id="button_dispatch" value="BaseInformation" onclick="baseInfo();"/>
+<body class="EntrySign-body">
+        <div class="SignFlowHomepage">
+            <div class="SignFlowHomepage-content">
+                <div class="Card SignContainer-content">
+                    <div class="SignFlowHeader" style="padding-bottom:5px">
+                        <div class="SignFlowHeader-slogen">完善个人信息</div>
+                    </div>
+                    <div class="SignContainer-inner">
+                        <div class="Register-content">
+                            <button type="submit" class="Button Register-submitButton Button--primary Button--blue" onclick="window.location.href='baseInfo.html';">基本信息</button>
+                            <button type="submit" class="Button Register-submitButton Button--primary Button--blue" onclick="window.location.href='eduHistory.html';">教育经历</button>
+                            <button type="submit" class="Button Register-submitButton Button--primary Button--blue" onclick="window.location.href='familyInfo.html';">家庭信息</button>
+                            <button type="submit" class="Button Register-submitButton Button--primary Button--blue" onclick="window.location.href='hobby.html';">兴趣爱好</button>
+                            <div class="Register-footer">
+                                <span class="Register-declaration">进入相应页面来填写个人信息</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="SignFlowHomepage-footer">
+                <div class="Links">
+                    <a target="_blank" rel="noopener noreferrer" href="https://github.com/ShiinaOrez">我的主页</a>
+                </div>
+                <div class="Rights">
+                    <span>© <!-- -->2019<!-- --> ShiinaOrez</span>
+                </div>
+            </footer>
         </div>
-        <div class="btdiv">
-            <input type="button" id="button_dispatch" value="FamilyInformation" onclick="familyInfo();"/>
-        </div>
-        <div class="btdiv">
-            <input type="button" id="button_dispatch" value="EducationHistory" onclick="eduHistory();"/>
-        </div>
-        <div class="btdiv">
-            <input type="button" id="button_dispatch" value="HobbyAndEnjoy" onclick="hobby();"/>
-        </div>
-</div>
-</div>    
 </body>
 </html>

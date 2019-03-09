@@ -135,7 +135,7 @@ smsInput {
   width: 100%;
   height: 100vh;
   position: relative;
-  background-image: url(../images/login/loginBac.png);
+  background-image: url(../image/loginBac.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -172,6 +172,7 @@ smsInput {
 }
 
 .SignFlowHeader {
+  padding-bottom: 5px;
   padding-top: 30px;
 }
 
