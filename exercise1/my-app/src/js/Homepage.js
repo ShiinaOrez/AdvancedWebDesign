@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Redirect} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect, withRouter} from 'react-router-dom';
 import RegisterContent from './RegisterContent'
 import PropTypes from "prop-types"
 import Footer from './Footer'
 import '../css/App.css';
 
 class Homepage extends Component {
+    baseInfo = () => {
+        this.props.history.push("/baseInfo")
+    }
+
+    eduHistory = () => {
+        this.props.history.push("/eduHistory")
+    }
+
     render() {
         return (
             <div className="SignFlowHomepage">
@@ -16,7 +24,7 @@ class Homepage extends Component {
                     </div>
                     <div className="SignContainer-inner">
                         <div className="Register-content">
-                            <button type="submit" className="Button Register-submitButton Button--primary Button--blue" >基本信息</button>
+                            <button type="submit" className="Button Register-submitButton Button--primary Button--blue" onClick={this.baseInfo}>基本信息</button>
                             <button type="submit" className="Button Register-submitButton Button--primary Button--blue" >教育经历</button>
                             <button type="submit" className="Button Register-submitButton Button--primary Button--blue" >家庭信息</button>
                             <button type="submit" className="Button Register-submitButton Button--primary Button--blue" >兴趣爱好</button>
@@ -33,4 +41,4 @@ class Homepage extends Component {
     }
 }
 
-export default Homepage;
+export default withRouter(Homepage);
