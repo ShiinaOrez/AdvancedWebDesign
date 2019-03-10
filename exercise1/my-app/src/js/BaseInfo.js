@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
+import Footer from './Footer.js'
 import '../css/Main.css'
+import '../css/App.css'
 
 class BaseInfo extends Component {
     constructor(props) {
@@ -8,7 +10,9 @@ class BaseInfo extends Component {
 
         this.state = {
             realName: "",
+            realEmail: "",
             whereFrom: "",
+            sex: false,
             age: 0
         }
     }
@@ -19,50 +23,78 @@ class BaseInfo extends Component {
         });
     }
 
+    changeEmail = e => {
+        this.setState( {
+            realEmail: e.target.value
+        })
+    }
+
+    changeWhere = e => {
+        this.setState( {
+            whereFrom: e.target.value
+        })
+    }
+
+    changeSex = e => {
+        this.setState( {
+            sex: e.target.value
+        })
+    }
+
+    save = () => {
+        const {
+            realName,
+            realEmail,
+            whereFrom,
+            sex,
+            age
+        } = this.state;
+        alert("Save Successful!");
+    }
+
     render() {
         return (
-            <div class="subject cardContainer">
+            <div className="box">
+            <div className="subject cardContainer">
             <div>
              <div>
-              <b class="title">个人设置</b>
-              <div class="main">
-               <img src="./木犀工作台_files/img.png1548138424.5539513" alt="avatar" style="width: 114px; height: 114px; border-radius: 100%;" />
-               <input type="file" class="personalSet-imgSelectImg" accept=".png, .jpg, .jpeg" />
-               <div class="personalSet-avaTip">
-                <b class="personalSet-selectImg">选择新头像<input type="file" class="personalSet-spanSelectImg" accept=".png, .jpg, .jpeg" /></b>
-                <p class="avaForm">你可以选择png/jpg图片作为头像</p>
+              <b className="title">个人设置</b>
+              <div className="main">
+               <img src="./木犀工作台_files/img.png1548138424.5539513" alt="avatar" className="avaclassName" />
+               <input type="file" className="personalSet-imgSelectImg" accept=".png, .jpg, .jpeg" />
+               <div className="personalSet-avaTip">
+                <b className="personalSet-selectImg">选择新头像<input type="file" className="personalSet-spanSelectImg" accept=".png, .jpg, .jpeg" /></b>
+                <p className="avaForm">你可以选择png/jpg图片作为头像</p>
                </div>
-               <div class="personalSet-inputList">
+               <div className="personalSet-inputList">
                 <b>名字</b>
-                <input type="text" placeholder="木小犀" class="personalSet-writeTip" value="ShiinaOrez" />
-                <p class="transparent personalSet-warning">输入框不能为空！</p>
-                <b>手机</b>
-                <input type="text" placeholder="88888888" class="personalSet-writeTip" value="13646477149" />
+                <input type="text" className="personalSet-writeTip" onChange={this.changeName}/>
+                <p className="transparent personalSet-warning">输入框不能为空！</p>
+                <b>邮箱</b>
+                <input type="text" className="personalSet-writeTip" onChange={this.changeEmail}/>
+                <p className="transparent personalSet-warning">输入框不能为空！</p>
+                <b>家乡</b>
+                <input type="text" className="personalSet-writeTip" onChange={this.changeWhere}/>
                </div>
               </div>
-              <div class="footer">
-               <b>通知设置</b>
-               <div class="sel">
-                <div class="member-selectMem">
-                 <div class="member-unit">
-                  <input type="checkbox" id="check站内信0" />
-                  <label for="check站内信0" id="lab"><span class="member-name" title="站内信">站内信</span></label>
-                 </div>
-                 <div class="member-unit">
-                  <input type="checkbox" id="check邮箱通知1" />
-                  <label for="check邮箱通知1" id="lab"><span class="member-name" title="邮箱通知">邮箱通知</span></label>
-                 </div>
+              <div className="footer">
+               <b>性别设置</b>
+               <div className="sel">
+                <div className="member-selectMem">
+                  <select className="backup_sex" name="sex" onChange={this.changeSex}>
+                    <option value="man">男</option>
+                    <option value="woman">女</option>
+                  </select>
                 </div>
                </div>
                <br />
-               <button type="button" class="saveBtn">保存设置</button>
+               <button type="button" className="Button Register-submitButton Button--primary Button--blue" onClick={this.save}>保存设置</button>
               </div>
-              <div class="none">
-               <div class="circle"></div>保存成功
-              </div>
-             </div>
             </div>
-           </div>
+            </div>
+            </div>
+            <Footer />
+            </div>
         );
     }
 }

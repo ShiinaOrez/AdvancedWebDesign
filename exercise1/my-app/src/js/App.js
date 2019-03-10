@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import RegisterContent from './RegisterContent'
 import Footer from './Footer'
 import Login from './Login'
-import Homepage from './Homepage'
 import '../css/App.css';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 
